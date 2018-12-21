@@ -32,12 +32,12 @@ extension NSColor {
     }
 
     /// Color represented as a Hex RGB string in the `hexConversionColorSpace` of the form `RRGGBB`.
-    var rgbString: String? {
+    public var rgbString: String? {
         return argbString.map { $0.dropFirst(2) }.map(String.init)
     }
 
     /// Color represented as a Hex RGB string in the `hexConversionColorSpace` of the form `AARRGGBB`.
-    var argbString: String? {
+    public var argbString: String? {
         guard let convertedColor = self.usingColorSpace(NSColor.hexConversionColorSpace) else { return nil }
 
         // Convert the components to numbers (unsigned decimal integer) between 0 and 255

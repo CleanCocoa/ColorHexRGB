@@ -1,7 +1,7 @@
 //  Copyright © 2018 Christian Tietze. All rights reserved. Distributed under the MIT License.
 
 import XCTest
-@testable import NSColorHexRGB
+import NSColorHexRGB
 
 class NSColorHexRGBTests: XCTestCase {
 
