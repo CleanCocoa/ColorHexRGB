@@ -10,6 +10,7 @@
 		50BE695B21CC2B520028318C /* NSColorHexRGB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BE695121CC2B520028318C /* NSColorHexRGB.framework */; };
 		50BE696021CC2B520028318C /* NSColorHexRGBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE695F21CC2B520028318C /* NSColorHexRGBTests.swift */; };
 		50BE696221CC2B520028318C /* NSColorHexRGB.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BE695421CC2B520028318C /* NSColorHexRGB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50BE696C21CC2B670028318C /* NSColor+HexConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BE696B21CC2B670028318C /* NSColor+HexConversion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		50BE695A21CC2B520028318C /* NSColorHexRGBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSColorHexRGBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BE695F21CC2B520028318C /* NSColorHexRGBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColorHexRGBTests.swift; sourceTree = "<group>"; };
 		50BE696121CC2B520028318C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50BE696B21CC2B670028318C /* NSColor+HexConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+HexConversion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				50BE695421CC2B520028318C /* NSColorHexRGB.h */,
+				50BE696B21CC2B670028318C /* NSColor+HexConversion.swift */,
 				50BE695521CC2B520028318C /* Info.plist */,
 			);
 			path = NSColorHexRGB;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					50BE695021CC2B520028318C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					50BE695921CC2B520028318C = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BE696C21CC2B670028318C /* NSColor+HexConversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		50BE696621CC2B520028318C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.christiantietze.NSColorHexRGB;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -365,6 +372,7 @@
 		50BE696721CC2B520028318C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -390,6 +398,7 @@
 		50BE696921CC2B520028318C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NSColorHexRGBTests/Info.plist;
@@ -407,6 +416,7 @@
 		50BE696A21CC2B520028318C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NSColorHexRGBTests/Info.plist;

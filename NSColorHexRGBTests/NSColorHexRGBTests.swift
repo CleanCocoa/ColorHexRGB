@@ -1,34 +1,54 @@
-//
-//  NSColorHexRGBTests.swift
-//  NSColorHexRGBTests
-//
-//  Created by Christian on 20.12.18.
-//  Copyright © 2018 Christian Tietze. All rights reserved.
-//
+//  Copyright © 2018 Christian Tietze. All rights reserved. Distributed under the MIT License.
 
 import XCTest
 @testable import NSColorHexRGB
 
 class NSColorHexRGBTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testRGBConversion() {
+        let initialColor = NSColor(calibratedRed: 0.4, green: 0.5, blue: 0.6, alpha: 0.8)
+
+        guard let rgbString = initialColor.rgbString else { XCTFail("Conversion to Hex failed"); return }
+        guard let colorFromRGB = NSColor(hexString: rgbString) else { XCTFail("Conversion from Hex failed"); return }
+
+        let convertedColorInDeviceSpace = colorFromRGB.usingColorSpace(NSColor.hexConversionColorSpace)!
+        let initialColorInDeciveSpace = initialColor.usingColorSpace(NSColor.hexConversionColorSpace)!
+
+        XCTAssertEqual(convertedColorInDeviceSpace.rgbString,
+                       initialColorInDeciveSpace.rgbString)
+        XCTAssertEqual(convertedColorInDeviceSpace.redComponent,
+                       initialColorInDeciveSpace.redComponent,
+                       accuracy: 0.005)
+        XCTAssertEqual(convertedColorInDeviceSpace.greenComponent,
+                       initialColorInDeciveSpace.greenComponent,
+                       accuracy: 0.005)
+        XCTAssertEqual(convertedColorInDeviceSpace.blueComponent,
+                       initialColorInDeciveSpace.blueComponent,
+                       accuracy: 0.005)
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    func testARGBConversion() {
+        let initialColor = NSColor(calibratedRed: 0.8, green: 0.2, blue: 0.1, alpha: 0.4)
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+        guard let argbString = initialColor.argbString else { XCTFail("Conversion to Hex failed"); return }
+        guard let colorFromRGB = NSColor(hexString: argbString) else { XCTFail("Conversion from Hex failed"); return }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+        let convertedColorInDeviceSpace = colorFromRGB.usingColorSpace(NSColor.hexConversionColorSpace)!
+        let initialColorInDeciveSpace = initialColor.usingColorSpace(NSColor.hexConversionColorSpace)!
 
+        XCTAssertEqual(convertedColorInDeviceSpace.rgbString,
+                       initialColorInDeciveSpace.rgbString)
+        XCTAssertEqual(convertedColorInDeviceSpace.redComponent,
+                       initialColorInDeciveSpace.redComponent,
+                       accuracy: 0.005)
+        XCTAssertEqual(convertedColorInDeviceSpace.greenComponent,
+                       initialColorInDeciveSpace.greenComponent,
+                       accuracy: 0.005)
+        XCTAssertEqual(convertedColorInDeviceSpace.blueComponent,
+                       initialColorInDeciveSpace.blueComponent,
+                       accuracy: 0.005)
+        XCTAssertEqual(convertedColorInDeviceSpace.alphaComponent,
+                       initialColorInDeciveSpace.alphaComponent,
+                       accuracy: 0.005)
+    }
 }
