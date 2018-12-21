@@ -1,10 +1,4 @@
-//
-//  NSColorHexRGB.h
-//  NSColorHexRGB
-//
-//  Created by Christian on 20.12.18.
-//  Copyright © 2018 Christian Tietze. All rights reserved.
-//
+//  Copyright © 2018 Christian Tietze. All rights reserved. Distributed under the MIT License.
 
 #import <Cocoa/Cocoa.h>
 
