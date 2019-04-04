@@ -153,10 +153,11 @@
 				TargetAttributes = {
 					50BE695021CC2B520028318C = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					50BE695921CC2B520028318C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -166,6 +167,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 50BE694721CC2B520028318C;
 			productRefGroup = 50BE695221CC2B520028318C /* Products */;
@@ -367,7 +369,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -393,7 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.christiantietze.ColorHexRGB;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -411,7 +413,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.christiantietze.ColorHexRGBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -429,7 +431,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.christiantietze.ColorHexRGBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
