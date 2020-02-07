@@ -24,6 +24,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50A3B1AD23ED68D3008B3673 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		50A3B1AE23ED68DF008B3673 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		50BE695121CC2B520028318C /* ColorHexRGB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorHexRGB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BE695421CC2B520028318C /* ColorHexRGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorHexRGB.h; sourceTree = "<group>"; };
 		50BE695521CC2B520028318C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +57,8 @@
 		50BE694721CC2B520028318C = {
 			isa = PBXGroup;
 			children = (
+				50A3B1AD23ED68D3008B3673 /* README.md */,
+				50A3B1AE23ED68DF008B3673 /* LICENSE */,
 				50BE695321CC2B520028318C /* NSColorHexRGB */,
 				50BE695E21CC2B520028318C /* NSColorHexRGBTests */,
 				50BE695221CC2B520028318C /* Products */,
