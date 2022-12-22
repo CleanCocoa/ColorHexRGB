@@ -30,9 +30,9 @@
 		50BE695421CC2B520028318C /* ColorHexRGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorHexRGB.h; sourceTree = "<group>"; };
 		50BE695521CC2B520028318C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50BE695A21CC2B520028318C /* ColorHexRGBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorHexRGBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50BE695F21CC2B520028318C /* ColorHexRGBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHexRGBTests.swift; sourceTree = "<group>"; };
+		50BE695F21CC2B520028318C /* ColorHexRGBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorHexRGBTests.swift; path = ../Tests/ColorHexRGBTests/ColorHexRGBTests.swift; sourceTree = "<group>"; };
 		50BE696121CC2B520028318C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50BE696B21CC2B670028318C /* Color+HexConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+HexConversion.swift"; sourceTree = "<group>"; };
+		50BE696B21CC2B670028318C /* Color+HexConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color+HexConversion.swift"; path = "../Sources/ColorHexRGB/Color+HexConversion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
